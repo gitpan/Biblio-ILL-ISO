@@ -2,8 +2,7 @@ package Biblio::ILL::ISO::DeliveryService;
 
 =head1 NAME
 
-Biblio::ILL::ISO::ConditionalReply - Perl extension for handling 
-ISO 10161 interlibrary loan Conditional-Reply messages
+Biblio::ILL::ISO::DeliveryService
 
 =cut
 
@@ -19,9 +18,10 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 #---------------------------------------------------------------------------
 # Mods
+# 0.02 - 2003.09.07 - fixed the POD
 # 0.01 - 2003.07.15 - original version
 #---------------------------------------------------------------------------
 

@@ -2,7 +2,7 @@ package Biblio::ILL::ISO::Amount;
 
 =head1 NAME
 
-Biblio::ILL::ISO::AlreadyForwarded
+Biblio::ILL::ISO::Amount
 
 =cut
 
@@ -13,13 +13,14 @@ use Carp;
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 #---------------------------------------------------------------------------
 # Mods
+# 0.02 - 2003.09.07 - fixed the POD
 # 0.01 - 2003.07.15 - original version
 #---------------------------------------------------------------------------
 
@@ -60,7 +61,7 @@ BEGIN{@ISA = qw ( Biblio::ILL::ISO::ILLASNtype );}   # inherit from ILLASNtype
 
 =head2 new([$amount_string [, $currency_code] ])
 
-Creates a new AlreadyForwarded object. Expects either no parameters, or
+Creates a new Amount object. Expects either no parameters, or
 a valid Biblio::ILL::ISO::AmountString and (optionally) a 3-character
 string indicating the currency code.
 

@@ -2,7 +2,7 @@ package Biblio::ILL::ISO::Lost;
 
 =head1 NAME
 
-Biblio::ILL::ISO::Request - Perl extension for handling ISO 10161 interlibrary loan ILL-Request messages
+Biblio::ILL::ISO::Lost - Perl extension for handling ISO 10161 interlibrary loan Lost messages
 
 =cut
 
@@ -11,13 +11,14 @@ use Carp;
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 #---------------------------------------------------------------------------
 # Mods
+# 0.02 - 2003.09.07 - fixed the POD
 # 0.01 - 2003.01.11 - original version
 #---------------------------------------------------------------------------
 

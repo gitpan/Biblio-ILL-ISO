@@ -119,33 +119,33 @@ BEGIN {
 }
 
 # ASN.1 definitions
-is( $Biblio::ILL::ISO::asn::VERSION,	 		'0.02',	'Ok' );
+is( $Biblio::ILL::ISO::asn::VERSION,	 		'0.03',	'Ok' );
 is( $Biblio::ILL::ISO::1_0_10161_13_3::VERSION, 	'0.01',	'Ok' );
 
 # "special" types (base classes)
 is( $Biblio::ILL::ISO::ILLASNtype::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::ENUMERATED::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::SEQUENCE_OF::VERSION, 		'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::ISO::VERSION, 			'0.03',	'Ok' );
+is( $Biblio::ILL::ISO::ISO::VERSION, 			'0.04',	'Ok' );
 
 # ASN.1 "Application" types (derived from Biblio::ILL::ISO::ISO)
 is( $Biblio::ILL::ISO::Answer::VERSION, 		'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::Cancel::VERSION, 		'0.01',	'Ok' );
+is( $Biblio::ILL::ISO::Cancel::VERSION, 		'0.02',	'Ok' );
 is( $Biblio::ILL::ISO::CancelReply::VERSION, 		'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::CheckedIn::VERSION, 		'0.01',	'Ok' );
+is( $Biblio::ILL::ISO::CheckedIn::VERSION, 		'0.02',	'Ok' );
 is( $Biblio::ILL::ISO::ConditionalReply::VERSION,	'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::Damaged::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::Expired::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::ForwardNotification::VERSION,	'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::Lost::VERSION,			'0.01',	'Ok' );
+is( $Biblio::ILL::ISO::Lost::VERSION,			'0.02',	'Ok' );
 is( $Biblio::ILL::ISO::Message::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::Overdue::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::Recall::VERSION, 		'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::Received::VERSION, 		'0.01',	'Ok' );
+is( $Biblio::ILL::ISO::Received::VERSION, 		'0.02',	'Ok' );
 is( $Biblio::ILL::ISO::Renew::VERSION,			'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::RenewAnswer::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::Request::VERSION, 		'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::Returned::VERSION, 		'0.01',	'Ok' );
+is( $Biblio::ILL::ISO::Returned::VERSION, 		'0.02',	'Ok' );
 is( $Biblio::ILL::ISO::Shipped::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::StatusOrErrorReport::VERSION,	'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::StatusQuery::VERSION, 		'0.01',	'Ok' );
@@ -154,7 +154,7 @@ is( $Biblio::ILL::ISO::StatusQuery::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::AccountNumber::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::AlreadyForwarded::VERSION,	'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::AlreadyTriedListType::VERSION, 	'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::Amount::VERSION, 		'0.01',	'Ok' );
+is( $Biblio::ILL::ISO::Amount::VERSION, 		'0.02',	'Ok' );
 is( $Biblio::ILL::ISO::AmountString::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::ClientId::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::ConditionalResults::VERSION,	'0.01', 'Ok' );
@@ -163,7 +163,7 @@ is( $Biblio::ILL::ISO::CurrentState::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::DateDue::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::DateTime::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::DeliveryAddress::VERSION, 	'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::DeliveryService::VERSION, 	'0.01',	'Ok' );
+is( $Biblio::ILL::ISO::DeliveryService::VERSION, 	'0.02',	'Ok' );
 is( $Biblio::ILL::ISO::EDeliveryDetails::VERSION, 	'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::ElectronicDeliveryService::VERSION, '0.01',	'Ok' );
 is( $Biblio::ILL::ISO::ElectronicDeliveryServiceSequence::VERSION, '0.01',	'Ok' );
@@ -222,7 +222,7 @@ is( $Biblio::ILL::ISO::StateTransitionProhibited::VERSION, '0.01',	'Ok' );
 is( $Biblio::ILL::ISO::StatusReport::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::SupplyDetails::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::SupplyMediumInfoType::VERSION, 	'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::SupplyMediumInfoTypeSequence::VERSION, '0.01',	'Ok' );
+is( $Biblio::ILL::ISO::SupplyMediumInfoTypeSequence::VERSION, '0.02',	'Ok' );
 is( $Biblio::ILL::ISO::SupplyMediumType::VERSION, 	'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::SystemAddress::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::SystemId::VERSION, 		'0.01',	'Ok' );

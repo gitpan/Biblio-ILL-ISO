@@ -2,7 +2,7 @@ package Biblio::ILL::ISO::SupplyMediumInfoTypeSequence;
 
 =head1 NAME
 
-Biblio::ILL::ISO::ElectronicDeliveryServiceSequence
+Biblio::ILL::ISO::SupplyMediumInfoTypeSequence
 
 =cut
 
@@ -14,13 +14,14 @@ use Carp;
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 #---------------------------------------------------------------------------
 # Mods
+# 0.02 - 2003.09.07 - fixed the POD
 # 0.01 - 2003.07.15 - original version
 #---------------------------------------------------------------------------
 

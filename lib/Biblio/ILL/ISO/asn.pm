@@ -1,13 +1,40 @@
 package Biblio::ILL::ISO::asn;
 
-our $VERSION = '0.02';
+=head1 NAME
+
+Biblio::ILL::ISO::asn
+
+=cut
+
+=head1 VERSION
+
+Version 0.03
+
+=cut
+
+our $VERSION = '0.03';
 #---------------------------------------------------------------------------
 # Mods
+# 0.03 - 2003.10.26 - Added POD documentation
 # 0.02 - 2003.07.17 - Changed Date-Time from EXPLICIT SEQUENCE to SEQUENCE,
 #                     to bring it in line with the nlc-bnc ASN.1
 # 0.01 - 2003.07.15 - original version (nlc-bnc version whacked to be
 #                     parsable by Convert::ASN1)
 #---------------------------------------------------------------------------
+
+=head1 DESCRIPTION
+
+Biblio::ILL::ISO::asn contains the ASN.1 definitions, accessible through $desc.
+
+=head1 USES
+
+ None.
+
+=head1 USED IN
+
+ Biblio::ILL::ISO::ISO
+
+=cut
 
 our $desc = <<'_END_OF_ASN_';
 
@@ -1238,5 +1265,33 @@ EDIFACTString ::= VisibleString
 --
 ----END
 _END_OF_ASN_
+
+=head1 SEE ALSO
+
+See the README for system design notes.
+See the parent class(es) for other available methods.
+
+For more information on Interlibrary Loan standards (ISO 10160/10161),
+a good place to start is:
+
+http://www.nlc-bnc.ca/iso/ill/main.htm
+
+=cut
+
+=head1 AUTHOR
+
+David Christensen, <DChristensenSPAMLESS@westman.wave.ca>
+
+=cut
+
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2003 by David Christensen
+
+This library is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+=cut
 
 1;

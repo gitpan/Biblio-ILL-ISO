@@ -14,13 +14,14 @@ use Carp;
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 #---------------------------------------------------------------------------
 # Mods
+# 0.04 - 2003.09.07 - fixed the POD
 # 0.03 - 2003.08.13 - added:
 #                     Forward-Notification
 #                     Shipped
