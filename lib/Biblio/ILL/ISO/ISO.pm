@@ -14,13 +14,17 @@ use Carp;
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 #---------------------------------------------------------------------------
 # Mods
+# 0.06 - 2003.12.08 - Fixed t/02.types.t to compare eval'd (pre-existing)
+#                     Data::Dumper output to existing hash, rather than
+#                     trying to compare (pre-existing) Data::Dumper output
+#                     to newly-dumped-from-existing-hash.
 # 0.05 - 2003.10.26 - DamagedDetails is currently unsupported.
 # 0.04 - 2003.09.07 - fixed the POD
 # 0.03 - 2003.08.13 - added:

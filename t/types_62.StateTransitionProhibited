@@ -1,50 +1,50 @@
 $VAR1 = bless( {
-                 'aPDU-type' => bless( {
-                                         'ENUM_LIST' => {
-                                                          'rENEW' => 13,
-                                                          'rETURNED' => 10,
-                                                          'iLL-ANSWER' => 4,
-                                                          'fORWARD-NOTIFICATION' => 2,
-                                                          'mESSAGE' => 17,
-                                                          'iLL-REQUEST' => 1,
-                                                          'cANCEL-REPLY' => 7,
-                                                          'oVERDUE' => 12,
-                                                          'lOST' => 15,
-                                                          'rECEIVED' => 8,
-                                                          'eXPIRED' => 20,
-                                                          'rENEW-ANSWER' => 14,
-                                                          'sTATUS-OR-ERROR-REPORT' => 19,
-                                                          'cHECKED-IN' => 11,
-                                                          'sTATUS-QUERY' => 18,
-                                                          'dAMAGED' => 16,
-                                                          'sHIPPED' => 3,
-                                                          'cONDITIONAL-REPLY' => 5,
-                                                          'rECALL' => 9,
-                                                          'cANCEL' => 6
-                                                        },
-                                         'ENUMERATED' => 20
-                                       }, 'Biblio::ILL::ISO::ILLAPDUtype' ),
                  'current-state' => bless( {
+                                             'ENUMERATED' => 8,
                                              'ENUM_LIST' => {
-                                                              'rETURNED' => 14,
-                                                              'nOT-SUPPLIED' => 1,
-                                                              'rENEW-PENDING' => 10,
-                                                              'oVERDUE' => 13,
-                                                              'rENEW-OVERDUE' => 12,
-                                                              'lOST' => 17,
-                                                              'iN-PROCESS' => 3,
                                                               'rECEIVED' => 9,
-                                                              'cANCEL-PENDING' => 6,
+                                                              'oVERDUE' => 13,
                                                               'pENDING' => 2,
-                                                              'uNKNOWN' => 18,
-                                                              'nOT-RECEIVED-OVERDUE' => 11,
-                                                              'cHECKED-IN' => 15,
-                                                              'sHIPPED' => 8,
-                                                              'fORWARD' => 4,
-                                                              'cONDITIONAL' => 5,
+                                                              'nOT-SUPPLIED' => 1,
+                                                              'lOST' => 17,
                                                               'rECALL' => 16,
-                                                              'cANCELLED' => 7
-                                                            },
-                                             'ENUMERATED' => 8
-                                           }, 'Biblio::ILL::ISO::CurrentState' )
+                                                              'cANCEL-PENDING' => 6,
+                                                              'iN-PROCESS' => 3,
+                                                              'fORWARD' => 4,
+                                                              'cANCELLED' => 7,
+                                                              'sHIPPED' => 8,
+                                                              'cHECKED-IN' => 15,
+                                                              'rENEW-PENDING' => 10,
+                                                              'uNKNOWN' => 18,
+                                                              'cONDITIONAL' => 5,
+                                                              'rETURNED' => 14,
+                                                              'nOT-RECEIVED-OVERDUE' => 11,
+                                                              'rENEW-OVERDUE' => 12
+                                                            }
+                                           }, 'Biblio::ILL::ISO::CurrentState' ),
+                 'aPDU-type' => bless( {
+                                         'ENUMERATED' => 20,
+                                         'ENUM_LIST' => {
+                                                          'eXPIRED' => 20,
+                                                          'rECEIVED' => 8,
+                                                          'oVERDUE' => 12,
+                                                          'cANCEL' => 6,
+                                                          'iLL-REQUEST' => 1,
+                                                          'lOST' => 15,
+                                                          'rECALL' => 9,
+                                                          'iLL-ANSWER' => 4,
+                                                          'sTATUS-OR-ERROR-REPORT' => 19,
+                                                          'rENEW' => 13,
+                                                          'cANCEL-REPLY' => 7,
+                                                          'rENEW-ANSWER' => 14,
+                                                          'dAMAGED' => 16,
+                                                          'mESSAGE' => 17,
+                                                          'sTATUS-QUERY' => 18,
+                                                          'sHIPPED' => 3,
+                                                          'cHECKED-IN' => 11,
+                                                          'fORWARD-NOTIFICATION' => 2,
+                                                          'rETURNED' => 10,
+                                                          'cONDITIONAL-REPLY' => 5
+                                                        }
+                                       }, 'Biblio::ILL::ISO::ILLAPDUtype' )
                }, 'Biblio::ILL::ISO::StateTransitionProhibited' );

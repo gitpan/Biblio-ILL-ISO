@@ -1,24 +1,24 @@
 $VAR1 = bless( {
+                 'ENUMERATED' => 18,
                  'ENUM_LIST' => {
-                                  'rETURNED' => 10,
-                                  'iLL-ANSWER' => 4,
-                                  'fORWARD-NOTIFICATION' => 2,
-                                  'mESSAGE' => 17,
-                                  'iLL-REQUEST' => 1,
-                                  'cANCEL-REPLY' => 7,
-                                  'lOST' => 15,
-                                  'rECEIVED' => 8,
                                   'eXPIRED' => 20,
-                                  'rENEW-ANSWER' => 14,
-                                  'sTATUS-OR-ERROR-REPORT' => 19,
-                                  'cHECKED-IN' => 11,
-                                  'dAMAGED' => 16,
-                                  'sTATUS-QUERY' => 18,
-                                  'sHIPPED' => 3,
-                                  'fORWARD' => 21,
-                                  'cONDITIONAL-REPLY' => 5,
+                                  'rECEIVED' => 8,
+                                  'cANCEL' => 6,
+                                  'iLL-REQUEST' => 1,
+                                  'lOST' => 15,
                                   'rECALL' => 9,
-                                  'cANCEL' => 6
-                                },
-                 'ENUMERATED' => 18
+                                  'iLL-ANSWER' => 4,
+                                  'sTATUS-OR-ERROR-REPORT' => 19,
+                                  'cANCEL-REPLY' => 7,
+                                  'rENEW-ANSWER' => 14,
+                                  'dAMAGED' => 16,
+                                  'mESSAGE' => 17,
+                                  'sTATUS-QUERY' => 18,
+                                  'fORWARD' => 21,
+                                  'sHIPPED' => 3,
+                                  'cHECKED-IN' => 11,
+                                  'fORWARD-NOTIFICATION' => 2,
+                                  'rETURNED' => 10,
+                                  'cONDITIONAL-REPLY' => 5
+                                }
                }, 'Biblio::ILL::ISO::MostRecentService' );

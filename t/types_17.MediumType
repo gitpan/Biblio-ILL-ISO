@@ -1,11 +1,11 @@
 $VAR1 = bless( {
+                 'ENUMERATED' => 1,
                  'ENUM_LIST' => {
-                                  'microform' => 3,
+                                  'machine-readable' => 6,
                                   'printed' => 1,
-                                  'film-or-video-recording' => 4,
                                   'audio-recording' => 5,
-                                  'other' => 7,
-                                  'machine-readable' => 6
-                                },
-                 'ENUMERATED' => 1
+                                  'microform' => 3,
+                                  'film-or-video-recording' => 4,
+                                  'other' => 7
+                                }
                }, 'Biblio::ILL::ISO::MediumType' );

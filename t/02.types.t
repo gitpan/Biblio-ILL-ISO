@@ -361,13 +361,23 @@ $hsh{"62.StateTransitionProhibited"} = new Biblio::ILL::ISO::StateTransitionProh
 										       );
 
 
+#foreach my $key (sort keys %hsh) {
+#    open( IN, "t/types_$key");
+#    $/ = undef;
+#    my $expected = <IN>;
+#    close( IN );
+#    my $actual = Dumper( $hsh{$key} );
+#    is( $actual, $expected, "types: $key");
+#}
+
 foreach my $key (sort keys %hsh) {
     open( IN, "t/types_$key");
     $/ = undef;
-    my $expected = <IN>;
+    my $expected = eval <IN>;
     close( IN );
-    my $actual = Dumper( $hsh{$key} );
-    is( $actual, $expected, "types: $key");
+    my $actual = $hsh{$key};
+#    is( $actual, $expected, "types: $key");
+    ok( eq_hash($actual, $expected) );
 }
 
 

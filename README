@@ -1,5 +1,5 @@
-Biblio::ILL::ISO version 0.05
-=============================
+Biblio::ILL::ISO
+================
 
 Biblio::ILL::ISO is a module for handling ISO-protocol Interlibrary 
 Loan messages.

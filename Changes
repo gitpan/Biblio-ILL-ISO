@@ -1,5 +1,17 @@
 Revision history for Perl extension Biblio::ILL::ISO.
 
+0.06  December 08, 2003
+      - Fixed t/02.types.t to compare eval'd (pre-existing)
+      Data::Dumper output to existing hash, rather than
+      trying to compare (pre-existing) Data::Dumper output
+      to newly-dumped-from-existing-hash.
+
+0.05  October 26, 2003
+      - DamagedDetails is currently unsupported
+
+0.04  September 07, 2003
+      - fixed the POD
+
 0.03  August 13, 2003
       - added new types for:
 	Forward-Notification

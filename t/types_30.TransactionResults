@@ -1,12 +1,12 @@
 $VAR1 = bless( {
+                 'ENUMERATED' => 5,
                  'ENUM_LIST' => {
-                                  'locations-provided' => 4,
-                                  'retry' => 2,
-                                  'unfilled' => 3,
                                   'hold-placed' => 6,
-                                  'will-supply' => 5,
                                   'estimate' => 7,
-                                  'conditional' => 1
-                                },
-                 'ENUMERATED' => 5
+                                  'will-supply' => 5,
+                                  'retry' => 2,
+                                  'conditional' => 1,
+                                  'locations-provided' => 4,
+                                  'unfilled' => 3
+                                }
                }, 'Biblio::ILL::ISO::TransactionResults' );

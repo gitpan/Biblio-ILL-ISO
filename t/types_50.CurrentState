@@ -1,23 +1,23 @@
 $VAR1 = bless( {
+                 'ENUMERATED' => 8,
                  'ENUM_LIST' => {
-                                  'rETURNED' => 14,
-                                  'nOT-SUPPLIED' => 1,
-                                  'rENEW-PENDING' => 10,
-                                  'oVERDUE' => 13,
-                                  'rENEW-OVERDUE' => 12,
-                                  'lOST' => 17,
-                                  'iN-PROCESS' => 3,
                                   'rECEIVED' => 9,
-                                  'cANCEL-PENDING' => 6,
+                                  'oVERDUE' => 13,
                                   'pENDING' => 2,
-                                  'uNKNOWN' => 18,
-                                  'nOT-RECEIVED-OVERDUE' => 11,
-                                  'cHECKED-IN' => 15,
-                                  'sHIPPED' => 8,
-                                  'fORWARD' => 4,
-                                  'cONDITIONAL' => 5,
+                                  'nOT-SUPPLIED' => 1,
+                                  'lOST' => 17,
                                   'rECALL' => 16,
-                                  'cANCELLED' => 7
-                                },
-                 'ENUMERATED' => 8
+                                  'cANCEL-PENDING' => 6,
+                                  'iN-PROCESS' => 3,
+                                  'fORWARD' => 4,
+                                  'cANCELLED' => 7,
+                                  'sHIPPED' => 8,
+                                  'cHECKED-IN' => 15,
+                                  'rENEW-PENDING' => 10,
+                                  'uNKNOWN' => 18,
+                                  'cONDITIONAL' => 5,
+                                  'rETURNED' => 14,
+                                  'nOT-RECEIVED-OVERDUE' => 11,
+                                  'rENEW-OVERDUE' => 12
+                                }
                }, 'Biblio::ILL::ISO::CurrentState' );

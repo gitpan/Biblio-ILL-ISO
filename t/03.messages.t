@@ -187,26 +187,26 @@ use Biblio::ILL::ISO::ForwardNotification;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # responder-address
@@ -216,7 +216,7 @@ my $rad = new Biblio::ILL::ISO::SystemAddress("SMTP","DChristensen\@westman.wave
 #
 # intermediary-id
 #
-my $iid = new Biblio::ILL::ISO::SystemId();
+$iid = new Biblio::ILL::ISO::SystemId();
 $iid->set_institution_name("The Great Library of Alexandria");
 
 #
@@ -259,35 +259,35 @@ use Biblio::ILL::ISO::Shipped;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # responder-address
 #
-my $rad = new Biblio::ILL::ISO::SystemAddress("SMTP","DChristensen\@westman.wave.ca");
+$rad = new Biblio::ILL::ISO::SystemAddress("SMTP","DChristensen\@westman.wave.ca");
 
 #
 # intermediary-id
 #
-my $iid = new Biblio::ILL::ISO::SystemId();
+$iid = new Biblio::ILL::ISO::SystemId();
 $iid->set_institution_name("The Great Library of Alexandria");
 
 #
@@ -298,12 +298,12 @@ my $sid = new Biblio::ILL::ISO::SystemId("MWPL");
 #
 # client-id
 #
-my $cid = new Biblio::ILL::ISO::ClientId("David Christensen","Most excellent","007");
+$cid = new Biblio::ILL::ISO::ClientId("David Christensen","Most excellent","007");
 
 #
 # transaction-type
 #
-my $tt = new Biblio::ILL::ISO::TransactionType("simple");
+$tt = new Biblio::ILL::ISO::TransactionType("simple");
 
 #
 # shipped-service-type
@@ -313,7 +313,7 @@ my $sst = new Biblio::ILL::ISO::ShippedServiceType("loan");
 #
 # responder-optional-messages
 #
-my $rom = new Biblio::ILL::ISO::ResponderOptionalMessageType(1,1,"desires","requires");
+$rom = new Biblio::ILL::ISO::ResponderOptionalMessageType(1,1,"desires","requires");
 
 #
 # supply-details
@@ -393,26 +393,26 @@ use Biblio::ILL::ISO::Answer;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # transaction-results
@@ -422,7 +422,7 @@ my $tr = new Biblio::ILL::ISO::TransactionResults("conditional");
 #
 # results-explanation
 #
-my $sid = new Biblio::ILL::ISO::SystemId();
+$sid = new Biblio::ILL::ISO::SystemId();
 $sid->set_person_name("David A. Christensen");
 $sid->set_institution_symbol("MWPL");
 my $loc = new Biblio::ILL::ISO::LocationInfo($sid,
@@ -445,7 +445,7 @@ my $rexp = new Biblio::ILL::ISO::ResultsExplanation( $conres );
 # send-to-list
 #
 my $stlt = new Biblio::ILL::ISO::SendToListType( new Biblio::ILL::ISO::SystemId("MBOM") );
-my $stlts = new Biblio::ILL::ISO::SendToListTypeSequence( $stlt );
+$stlts = new Biblio::ILL::ISO::SendToListTypeSequence( $stlt );
 $stlts->add( new Biblio::ILL::ISO::SendToListType( new Biblio::ILL::ISO::SystemId("MWPL"),
 						   new Biblio::ILL::ISO::AccountNumber("PLS001"),
 						   new Biblio::ILL::ISO::SystemAddress("SMTP","pls\@gov.mb.ca")
@@ -455,7 +455,7 @@ $stlts->add( new Biblio::ILL::ISO::SendToListType( new Biblio::ILL::ISO::SystemI
 #
 # already-tried-list
 #
-my $atlt = new Biblio::ILL::ISO::AlreadyTriedListType( new Biblio::ILL::ISO::SystemId("BVAS") );
+$atlt = new Biblio::ILL::ISO::AlreadyTriedListType( new Biblio::ILL::ISO::SystemId("BVAS") );
 $obj = new Biblio::ILL::ISO::SystemId();
 $obj->set_institution_name("Winnipeg Public Library");
 $atlt->add($obj);
@@ -467,12 +467,12 @@ $atlt->add( new Biblio::ILL::ISO::SystemId("MBOM"));
 #
 # responder-optional-messages
 #
-my $rom = new Biblio::ILL::ISO::ResponderOptionalMessageType(1,1,"desires","requires");
+$rom = new Biblio::ILL::ISO::ResponderOptionalMessageType(1,1,"desires","requires");
 
 #
 # responder-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -512,31 +512,31 @@ use Biblio::ILL::ISO::ConditionalReply;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # responder-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -572,31 +572,31 @@ use Biblio::ILL::ISO::Cancel;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # requester-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a requester-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a requester-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -631,31 +631,31 @@ use Biblio::ILL::ISO::CancelReply;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # responder-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -691,31 +691,31 @@ use Biblio::ILL::ISO::Received;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # supplier-id
 #
-my $sid = new Biblio::ILL::ISO::SystemId("MBOM");
+$sid = new Biblio::ILL::ISO::SystemId("MBOM");
 
 #
 # date-received
@@ -725,12 +725,12 @@ my $dr = new Biblio::ILL::ISO::ISODate("20030813");
 #
 # shipped-service-type
 #
-my $sst = new Biblio::ILL::ISO::ShippedServiceType("loan");
+$sst = new Biblio::ILL::ISO::ShippedServiceType("loan");
 
 #
 # requester-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a requester-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a requester-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -768,31 +768,31 @@ use Biblio::ILL::ISO::Recall;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # responder-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -827,31 +827,31 @@ use Biblio::ILL::ISO::Returned;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # date-returned
 #
-my $dr = new Biblio::ILL::ISO::ISODate("20030814");
+$dr = new Biblio::ILL::ISO::ISODate("20030814");
 
 #
 # returned-via
@@ -866,7 +866,7 @@ my $ins = new Biblio::ILL::ISO::Amount("123.45");
 #
 # requester-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a requester-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a requester-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -903,26 +903,26 @@ use Biblio::ILL::ISO::CheckedIn;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # date-checked-in
@@ -932,7 +932,7 @@ my $dci = new Biblio::ILL::ISO::ISODate("20030814");
 #
 # responder-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -968,26 +968,26 @@ use Biblio::ILL::ISO::Overdue;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # date-due
@@ -997,7 +997,7 @@ my $dd = new Biblio::ILL::ISO::DateDue("20030814","false");
 #
 # responder-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -1033,26 +1033,26 @@ use Biblio::ILL::ISO::Renew;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # desired-due-date
@@ -1062,7 +1062,7 @@ my $ddd = new Biblio::ILL::ISO::ISODate("20030814");
 #
 # requester-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a requester-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a requester-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -1098,36 +1098,36 @@ use Biblio::ILL::ISO::RenewAnswer;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # date-due
 #
-my $dd = new Biblio::ILL::ISO::DateDue("20030814","true");
+$dd = new Biblio::ILL::ISO::DateDue("20030814","true");
 
 #
 # responder-note
 #
-my $rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
+$rn = new Biblio::ILL::ISO::ILLString("This is a responder-note.");
 
 
 #-------------------------------------------------------------------------------------------
@@ -1164,26 +1164,26 @@ use Biblio::ILL::ISO::Lost;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 
 #-------------------------------------------------------------------------------------------
@@ -1218,26 +1218,26 @@ use Biblio::ILL::ISO::Damaged;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # damaged-details
@@ -1278,26 +1278,26 @@ use Biblio::ILL::ISO::Message;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # note
@@ -1338,31 +1338,31 @@ use Biblio::ILL::ISO::StatusQuery;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # note
 #
-my $note = new Biblio::ILL::ISO::ILLString("This is a note.");
+$note = new Biblio::ILL::ISO::ILLString("This is a note.");
 
 
 
@@ -1398,26 +1398,26 @@ use Biblio::ILL::ISO::StatusOrErrorReport;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 #
 # status-report
@@ -1442,7 +1442,7 @@ my $sr = new Biblio::ILL::ISO::StatusReport($hr, $cs);
 #
 # note
 #
-my $note = new Biblio::ILL::ISO::ILLString("This is a note.");
+$note = new Biblio::ILL::ISO::ILLString("This is a note.");
 
 
 
@@ -1479,26 +1479,26 @@ use Biblio::ILL::ISO::Expired;
 #
 # transaction-id
 #
-my $tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
+$tid = new Biblio::ILL::ISO::TransactionId("PLS","001","", 
 					      new Biblio::ILL::ISO::SystemId("MWPL"));
 
 #
 # service-date-time
 #
-my $sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
+$sdt = new Biblio::ILL::ISO::ServiceDateTime( new Biblio::ILL::ISO::DateTime("20030623","114400"),
 						 new Biblio::ILL::ISO::DateTime("20030623","114015")
 						 );
 
 #
 # requester-id
 #
-my $reqid = new Biblio::ILL::ISO::SystemId();
+$reqid = new Biblio::ILL::ISO::SystemId();
 $reqid->set_person_name("David A. Christensen");
 
 #
 # responder-id
 #
-my $resid = new Biblio::ILL::ISO::SystemId("MWPL");
+$resid = new Biblio::ILL::ISO::SystemId("MWPL");
 
 
 
@@ -1547,7 +1547,7 @@ $tester{"19.status-or-error-report"} = new Biblio::ILL::ISO::StatusOrErrorReport
 $tester{"20.expired"} = new Biblio::ILL::ISO::Expired;
 
 #my $generate = "Build me some new test cases!";
-
+my $generate = undef;
 foreach $key (sort keys %tester) {
     if (defined $generate) {
 	$msgs{$key}->write("t/msg_$key.ber");

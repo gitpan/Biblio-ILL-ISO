@@ -1,29 +1,50 @@
 $VAR1 = bless( {
+                 'reason-locs-provided' => bless( {
+                                                    'ENUMERATED' => 5,
+                                                    'ENUM_LIST' => {
+                                                                     'poor-condition' => 12,
+                                                                     'on-reserve' => 11,
+                                                                     'responder-specific' => 28,
+                                                                     'not-owned' => 5,
+                                                                     'on-order' => 6,
+                                                                     'on-hold' => 19,
+                                                                     'non-circulating' => 4,
+                                                                     'cost-exceeds-limit' => 13,
+                                                                     'lacking' => 9,
+                                                                     'volume-issue-not-yet-available' => 7,
+                                                                     'other' => 27,
+                                                                     'lost' => 3,
+                                                                     'in-use-on-loan' => 1,
+                                                                     'at-bindery' => 8,
+                                                                     'not-on-shelf' => 10,
+                                                                     'in-process' => 2
+                                                                   }
+                                                  }, 'Biblio::ILL::ISO::ReasonLocsProvided' ),
                  'locations' => bless( {
                                          'SEQUENCE' => [
                                                          bless( {
-                                                                  'location-note' => bless( {
-                                                                                              'generalstring' => 'This is a location note.'
-                                                                                            }, 'Biblio::ILL::ISO::ILLString' ),
                                                                   'location-id' => bless( {
-                                                                                            'person-or-institution-symbol' => bless( {
-                                                                                                                                       'institution-symbol' => bless( {
-                                                                                                                                                                        'generalstring' => 'MWPL'
-                                                                                                                                                                      }, 'Biblio::ILL::ISO::ILLString' )
-                                                                                                                                     }, 'Biblio::ILL::ISO::PersonOrInstitutionSymbol' ),
                                                                                             'name-of-person-or-institution' => bless( {
                                                                                                                                         'name-of-person' => bless( {
                                                                                                                                                                      'generalstring' => 'David A. Christensen'
                                                                                                                                                                    }, 'Biblio::ILL::ISO::ILLString' )
-                                                                                                                                      }, 'Biblio::ILL::ISO::NameOfPersonOrInstitution' )
+                                                                                                                                      }, 'Biblio::ILL::ISO::NameOfPersonOrInstitution' ),
+                                                                                            'person-or-institution-symbol' => bless( {
+                                                                                                                                       'institution-symbol' => bless( {
+                                                                                                                                                                        'generalstring' => 'MWPL'
+                                                                                                                                                                      }, 'Biblio::ILL::ISO::ILLString' )
+                                                                                                                                     }, 'Biblio::ILL::ISO::PersonOrInstitutionSymbol' )
                                                                                           }, 'Biblio::ILL::ISO::SystemId' ),
+                                                                  'location-note' => bless( {
+                                                                                              'generalstring' => 'This is a location note.'
+                                                                                            }, 'Biblio::ILL::ISO::ILLString' ),
                                                                   'location-address' => bless( {
-                                                                                                 'telecom-service-address' => bless( {
-                                                                                                                                       'generalstring' => 'DChristensen@westman.wave.ca'
-                                                                                                                                     }, 'Biblio::ILL::ISO::ILLString' ),
                                                                                                  'telecom-service-identifier' => bless( {
                                                                                                                                           'generalstring' => 'SMTP'
-                                                                                                                                        }, 'Biblio::ILL::ISO::ILLString' )
+                                                                                                                                        }, 'Biblio::ILL::ISO::ILLString' ),
+                                                                                                 'telecom-service-address' => bless( {
+                                                                                                                                       'generalstring' => 'DChristensen@westman.wave.ca'
+                                                                                                                                     }, 'Biblio::ILL::ISO::ILLString' )
                                                                                                }, 'Biblio::ILL::ISO::SystemAddress' )
                                                                 }, 'Biblio::ILL::ISO::LocationInfo' ),
                                                          bless( {
@@ -35,35 +56,14 @@ $VAR1 = bless( {
                                                                                                                                       }, 'Biblio::ILL::ISO::NameOfPersonOrInstitution' )
                                                                                           }, 'Biblio::ILL::ISO::SystemId' ),
                                                                   'location-address' => bless( {
-                                                                                                 'telecom-service-address' => bless( {
-                                                                                                                                       'generalstring' => 'library@brandon.mb.ca'
-                                                                                                                                     }, 'Biblio::ILL::ISO::ILLString' ),
                                                                                                  'telecom-service-identifier' => bless( {
                                                                                                                                           'generalstring' => 'SMTP'
-                                                                                                                                        }, 'Biblio::ILL::ISO::ILLString' )
+                                                                                                                                        }, 'Biblio::ILL::ISO::ILLString' ),
+                                                                                                 'telecom-service-address' => bless( {
+                                                                                                                                       'generalstring' => 'library@brandon.mb.ca'
+                                                                                                                                     }, 'Biblio::ILL::ISO::ILLString' )
                                                                                                }, 'Biblio::ILL::ISO::SystemAddress' )
                                                                 }, 'Biblio::ILL::ISO::LocationInfo' )
                                                        ]
-                                       }, 'Biblio::ILL::ISO::LocationInfoSequence' ),
-                 'reason-locs-provided' => bless( {
-                                                    'ENUM_LIST' => {
-                                                                     'not-owned' => 5,
-                                                                     'lacking' => 9,
-                                                                     'responder-specific' => 28,
-                                                                     'on-reserve' => 11,
-                                                                     'poor-condition' => 12,
-                                                                     'non-circulating' => 4,
-                                                                     'lost' => 3,
-                                                                     'on-order' => 6,
-                                                                     'volume-issue-not-yet-available' => 7,
-                                                                     'cost-exceeds-limit' => 13,
-                                                                     'in-use-on-loan' => 1,
-                                                                     'in-process' => 2,
-                                                                     'not-on-shelf' => 10,
-                                                                     'other' => 27,
-                                                                     'on-hold' => 19,
-                                                                     'at-bindery' => 8
-                                                                   },
-                                                    'ENUMERATED' => 5
-                                                  }, 'Biblio::ILL::ISO::ReasonLocsProvided' )
+                                       }, 'Biblio::ILL::ISO::LocationInfoSequence' )
                }, 'Biblio::ILL::ISO::LocationsResults' );

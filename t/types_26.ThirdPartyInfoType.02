@@ -1,19 +1,13 @@
 $VAR1 = bless( {
+                 'permission-to-partition' => 1,
                  'initial-requester-address' => bless( {
-                                                         'telecom-service-address' => bless( {
-                                                                                               'generalstring' => 'David_A_Christensen@hotmail.com'
-                                                                                             }, 'Biblio::ILL::ISO::ILLString' ),
                                                          'telecom-service-identifier' => bless( {
                                                                                                   'generalstring' => 'SMTP'
-                                                                                                }, 'Biblio::ILL::ISO::ILLString' )
+                                                                                                }, 'Biblio::ILL::ISO::ILLString' ),
+                                                         'telecom-service-address' => bless( {
+                                                                                               'generalstring' => 'David_A_Christensen@hotmail.com'
+                                                                                             }, 'Biblio::ILL::ISO::ILLString' )
                                                        }, 'Biblio::ILL::ISO::SystemAddress' ),
-                 'preference' => bless( {
-                                          'ENUM_LIST' => {
-                                                           'unordered' => 2,
-                                                           'ordered' => 1
-                                                         },
-                                          'ENUMERATED' => 1
-                                        }, 'Biblio::ILL::ISO::Preference' ),
                  'permission-to-change-send-to-list' => 1,
                  'send-to-list' => bless( {
                                             'SEQUENCE' => [
@@ -27,14 +21,6 @@ $VAR1 = bless( {
                                                                                            }, 'Biblio::ILL::ISO::SystemId' )
                                                                    }, 'Biblio::ILL::ISO::SendToListType' ),
                                                             bless( {
-                                                                     'system-address' => bless( {
-                                                                                                  'telecom-service-address' => bless( {
-                                                                                                                                        'generalstring' => 'pls@gov.mb.ca'
-                                                                                                                                      }, 'Biblio::ILL::ISO::ILLString' ),
-                                                                                                  'telecom-service-identifier' => bless( {
-                                                                                                                                           'generalstring' => 'SMTP'
-                                                                                                                                         }, 'Biblio::ILL::ISO::ILLString' )
-                                                                                                }, 'Biblio::ILL::ISO::SystemAddress' ),
                                                                      'system-id' => bless( {
                                                                                              'person-or-institution-symbol' => bless( {
                                                                                                                                         'institution-symbol' => bless( {
@@ -44,11 +30,25 @@ $VAR1 = bless( {
                                                                                            }, 'Biblio::ILL::ISO::SystemId' ),
                                                                      'account-number' => bless( {
                                                                                                   'generalstring' => 'PLS001'
-                                                                                                }, 'Biblio::ILL::ISO::AccountNumber' )
+                                                                                                }, 'Biblio::ILL::ISO::AccountNumber' ),
+                                                                     'system-address' => bless( {
+                                                                                                  'telecom-service-identifier' => bless( {
+                                                                                                                                           'generalstring' => 'SMTP'
+                                                                                                                                         }, 'Biblio::ILL::ISO::ILLString' ),
+                                                                                                  'telecom-service-address' => bless( {
+                                                                                                                                        'generalstring' => 'pls@gov.mb.ca'
+                                                                                                                                      }, 'Biblio::ILL::ISO::ILLString' )
+                                                                                                }, 'Biblio::ILL::ISO::SystemAddress' )
                                                                    }, 'Biblio::ILL::ISO::SendToListType' )
                                                           ]
                                           }, 'Biblio::ILL::ISO::SendToListTypeSequence' ),
-                 'permission-to-partition' => 1,
+                 'preference' => bless( {
+                                          'ENUMERATED' => 1,
+                                          'ENUM_LIST' => {
+                                                           'unordered' => 2,
+                                                           'ordered' => 1
+                                                         }
+                                        }, 'Biblio::ILL::ISO::Preference' ),
                  'already-tried-list' => bless( {
                                                   'SEQUENCE' => [
                                                                   bless( {
@@ -81,6 +81,6 @@ $VAR1 = bless( {
                                                                          }, 'Biblio::ILL::ISO::SystemId' )
                                                                 ]
                                                 }, 'Biblio::ILL::ISO::AlreadyTriedListType' ),
-                 'permission-to-chain' => 1,
-                 'permission-to-forward' => 1
+                 'permission-to-forward' => 1,
+                 'permission-to-chain' => 1
                }, 'Biblio::ILL::ISO::ThirdPartyInfoType' );

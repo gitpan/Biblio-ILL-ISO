@@ -126,7 +126,7 @@ is( $Biblio::ILL::ISO::1_0_10161_13_3::VERSION, 	'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::ILLASNtype::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::ENUMERATED::VERSION, 		'0.01',	'Ok' );
 is( $Biblio::ILL::ISO::SEQUENCE_OF::VERSION, 		'0.01',	'Ok' );
-is( $Biblio::ILL::ISO::ISO::VERSION, 			'0.05',	'Ok' );
+is( $Biblio::ILL::ISO::ISO::VERSION, 			'0.06',	'Ok' );
 
 # ASN.1 "Application" types (derived from Biblio::ILL::ISO::ISO)
 is( $Biblio::ILL::ISO::Answer::VERSION, 		'0.01',	'Ok' );

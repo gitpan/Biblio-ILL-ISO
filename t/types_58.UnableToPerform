@@ -1,8 +1,8 @@
 $VAR1 = bless( {
+                 'ENUMERATED' => 2,
                  'ENUM_LIST' => {
-                                  'other' => 3,
+                                  'resource-limitation' => 2,
                                   'not-available' => 1,
-                                  'resource-limitation' => 2
-                                },
-                 'ENUMERATED' => 2
+                                  'other' => 3
+                                }
                }, 'Biblio::ILL::ISO::UnableToPerform' );

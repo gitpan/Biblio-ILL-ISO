@@ -1,20 +1,20 @@
 $VAR1 = bless( {
-                 'can-send-CHECKED-IN' => 1,
-                 'can-send-SHIPPED' => 1,
                  'responder-RETURNED' => bless( {
+                                                  'ENUMERATED' => 1,
                                                   'ENUM_LIST' => {
                                                                    'desires' => 2,
                                                                    'requires' => 1,
                                                                    'neither' => 3
-                                                                 },
-                                                  'ENUMERATED' => 1
+                                                                 }
                                                 }, 'Biblio::ILL::ISO::ResponderRETURNED' ),
                  'responder-RECEIVED' => bless( {
+                                                  'ENUMERATED' => 2,
                                                   'ENUM_LIST' => {
                                                                    'desires' => 2,
                                                                    'requires' => 1,
                                                                    'neither' => 3
-                                                                 },
-                                                  'ENUMERATED' => 2
-                                                }, 'Biblio::ILL::ISO::ResponderRECEIVED' )
+                                                                 }
+                                                }, 'Biblio::ILL::ISO::ResponderRECEIVED' ),
+                 'can-send-SHIPPED' => 1,
+                 'can-send-CHECKED-IN' => 1
                }, 'Biblio::ILL::ISO::ResponderOptionalMessageType' );
