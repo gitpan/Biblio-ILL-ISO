@@ -14,13 +14,14 @@ use Carp;
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =cut
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 #---------------------------------------------------------------------------
 # Mods
+# 0.05 - 2003.10.26 - DamagedDetails is currently unsupported.
 # 0.04 - 2003.09.07 - fixed the POD
 # 0.03 - 2003.08.13 - added:
 #                     Forward-Notification
@@ -70,6 +71,9 @@ Each of the underlying ISO 10161 ASN.1 types (eg: ILLString, SystemId) from whic
 # When I've got this figured out, add it to the ISA list
 # Biblio::ILL::ISO::Extension
 
+# Currently unsupported:
+#Biblio::ILL::ISO::DamagedDetails
+
 BEGIN{@ISA = qw ( Biblio::ILL::ISO::ILLASNtype
 		  Biblio::ILL::ISO::AccountNumber
 		  Biblio::ILL::ISO::AlreadyForwarded
@@ -80,7 +84,6 @@ BEGIN{@ISA = qw ( Biblio::ILL::ISO::ILLASNtype
 		  Biblio::ILL::ISO::CostInfoType
 		  Biblio::ILL::ISO::ConditionalResults
 		  Biblio::ILL::ISO::CurrentState
-		  Biblio::ILL::ISO::DamagedDetails
 		  Biblio::ILL::ISO::DateDue
 		  Biblio::ILL::ISO::DateTime
 		  Biblio::ILL::ISO::DeliveryAddress
