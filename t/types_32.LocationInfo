@@ -1,0 +1,25 @@
+$VAR1 = bless( {
+                 'location-note' => bless( {
+                                             'generalstring' => 'This is a location note.'
+                                           }, 'Biblio::ILL::ISO::ILLString' ),
+                 'location-id' => bless( {
+                                           'person-or-institution-symbol' => bless( {
+                                                                                      'institution-symbol' => bless( {
+                                                                                                                       'generalstring' => 'MWPL'
+                                                                                                                     }, 'Biblio::ILL::ISO::ILLString' )
+                                                                                    }, 'Biblio::ILL::ISO::PersonOrInstitutionSymbol' ),
+                                           'name-of-person-or-institution' => bless( {
+                                                                                       'name-of-person' => bless( {
+                                                                                                                    'generalstring' => 'David A. Christensen'
+                                                                                                                  }, 'Biblio::ILL::ISO::ILLString' )
+                                                                                     }, 'Biblio::ILL::ISO::NameOfPersonOrInstitution' )
+                                         }, 'Biblio::ILL::ISO::SystemId' ),
+                 'location-address' => bless( {
+                                                'telecom-service-address' => bless( {
+                                                                                      'generalstring' => 'DChristensen@westman.wave.ca'
+                                                                                    }, 'Biblio::ILL::ISO::ILLString' ),
+                                                'telecom-service-identifier' => bless( {
+                                                                                         'generalstring' => 'SMTP'
+                                                                                       }, 'Biblio::ILL::ISO::ILLString' )
+                                              }, 'Biblio::ILL::ISO::SystemAddress' )
+               }, 'Biblio::ILL::ISO::LocationInfo' );

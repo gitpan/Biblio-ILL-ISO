@@ -1,0 +1,36 @@
+$VAR1 = bless( {
+                 'publication-date' => bless( {
+                                                'generalstring' => '2003'
+                                              }, 'Biblio::ILL::ISO::ILLString' ),
+                 'pagination' => bless( {
+                                          'generalstring' => '456'
+                                        }, 'Biblio::ILL::ISO::ILLString' ),
+                 'call-number' => bless( {
+                                           'generalstring' => 'CHR001.1'
+                                         }, 'Biblio::ILL::ISO::ILLString' ),
+                 'author' => bless( {
+                                      'generalstring' => 'David Christensen'
+                                    }, 'Biblio::ILL::ISO::ILLString' ),
+                 'title' => bless( {
+                                     'generalstring' => 'My Book'
+                                   }, 'Biblio::ILL::ISO::ILLString' ),
+                 'held-medium-type' => bless( {
+                                                'ENUM_LIST' => {
+                                                                 'microform' => 3,
+                                                                 'printed' => 1,
+                                                                 'film-or-video-recording' => 4,
+                                                                 'audio-recording' => 5,
+                                                                 'other' => 7,
+                                                                 'machine-readable' => 6
+                                                               },
+                                                'ENUMERATED' => 1
+                                              }, 'Biblio::ILL::ISO::MediumType' ),
+                 'item-type' => bless( {
+                                         'ENUM_LIST' => {
+                                                          'other' => 3,
+                                                          'serial' => 2,
+                                                          'monograph' => 1
+                                                        },
+                                         'ENUMERATED' => 1
+                                       }, 'Biblio::ILL::ISO::ItemType' )
+               }, 'Biblio::ILL::ISO::ItemId' );

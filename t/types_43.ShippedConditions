@@ -1,0 +1,10 @@
+$VAR1 = bless( {
+                 'ENUM_LIST' => {
+                                  'other' => 27,
+                                  'client-signature-required' => 24,
+                                  'no-reproduction' => 23,
+                                  'library-use-only' => 22,
+                                  'special-collections-supervision-required' => 25
+                                },
+                 'ENUMERATED' => 24
+               }, 'Biblio::ILL::ISO::ShippedConditions' );

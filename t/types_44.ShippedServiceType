@@ -1,0 +1,7 @@
+$VAR1 = bless( {
+                 'ENUM_LIST' => {
+                                  'loan' => 1,
+                                  'copy-non-returnable' => 2
+                                },
+                 'ENUMERATED' => 1
+               }, 'Biblio::ILL::ISO::ShippedServiceType' );

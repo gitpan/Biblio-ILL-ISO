@@ -1,0 +1,20 @@
+$VAR1 = bless( {
+                 'requester-CHECKED-IN' => bless( {
+                                                    'ENUM_LIST' => {
+                                                                     'desires' => 2,
+                                                                     'requires' => 1,
+                                                                     'neither' => 3
+                                                                   },
+                                                    'ENUMERATED' => 1
+                                                  }, 'Biblio::ILL::ISO::RequesterCHECKEDIN' ),
+                 'requester-SHIPPED' => bless( {
+                                                 'ENUM_LIST' => {
+                                                                  'desires' => 2,
+                                                                  'requires' => 1,
+                                                                  'neither' => 3
+                                                                },
+                                                 'ENUMERATED' => 2
+                                               }, 'Biblio::ILL::ISO::RequesterSHIPPED' ),
+                 'can-send-RETURNED' => 1,
+                 'can-send-RECEIVED' => 1
+               }, 'Biblio::ILL::ISO::RequesterOptionalMessageType' );

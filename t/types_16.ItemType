@@ -1,0 +1,8 @@
+$VAR1 = bless( {
+                 'ENUM_LIST' => {
+                                  'other' => 3,
+                                  'serial' => 2,
+                                  'monograph' => 1
+                                },
+                 'ENUMERATED' => 1
+               }, 'Biblio::ILL::ISO::ItemType' );

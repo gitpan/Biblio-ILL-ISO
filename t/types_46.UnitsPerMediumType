@@ -1,0 +1,15 @@
+$VAR1 = bless( {
+                 'medium' => bless( {
+                                      'ENUM_LIST' => {
+                                                       'microform' => 3,
+                                                       'printed' => 1,
+                                                       'film-or-video-recording' => 4,
+                                                       'audio-recording' => 5,
+                                                       'other' => 7,
+                                                       'photocopy' => 2,
+                                                       'machine-readable' => 6
+                                                     },
+                                      'ENUMERATED' => 5
+                                    }, 'Biblio::ILL::ISO::SupplyMediumType' ),
+                 'no-of-units' => 3
+               }, 'Biblio::ILL::ISO::UnitsPerMediumType' );

@@ -1,0 +1,12 @@
+$VAR1 = bless( {
+                 'date-due-field' => bless( {
+                                              'generalstring' => '20030813'
+                                            }, 'Biblio::ILL::ISO::ISODate' ),
+                 'renewable' => bless( {
+                                         'ENUM_LIST' => {
+                                                          'false' => 0,
+                                                          'true' => 1
+                                                        },
+                                         'ENUMERATED' => 0
+                                       }, 'Biblio::ILL::ISO::Flag' )
+               }, 'Biblio::ILL::ISO::DateDue' );

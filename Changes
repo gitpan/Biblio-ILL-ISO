@@ -1,0 +1,31 @@
+Revision history for Perl extension Biblio::ILL::ISO.
+
+0.03  August 13, 2003
+      - added new types for:
+	Forward-Notification
+        Shipped
+        Conditional-Reply
+        Cancel
+        Cancel-Reply
+        Received
+        Recall
+        Returned
+        Checked-In
+        Overdue
+        Renew
+        Renew-Answer
+        Lost
+        Damaged
+        Message
+        Status-Query
+        Status-Or-Error-Report
+        Expired
+      - added a whole whack of tests
+
+0.02  July 26, 2003
+      - added proper lib to @INC
+      - added Answer types
+
+0.01  July 15, 2003
+      - original version
+

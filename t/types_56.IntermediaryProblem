@@ -1,0 +1,6 @@
+$VAR1 = bless( {
+                 'ENUM_LIST' => {
+                                  'cannot-send-onward' => 1
+                                },
+                 'ENUMERATED' => 1
+               }, 'Biblio::ILL::ISO::IntermediaryProblem' );
